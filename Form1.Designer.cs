@@ -41,6 +41,7 @@
             runningman.TabIndex = 0;
             runningman.Text = "나를 잡아봐";
             runningman.UseVisualStyleBackColor = true;
+            runningman.Click += runningman_Click;
             runningman.MouseEnter += runningman_MouseEnter;
             // 
             // Form1
