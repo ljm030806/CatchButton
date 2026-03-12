@@ -43,6 +43,7 @@
             runningman.UseVisualStyleBackColor = true;
             runningman.Click += runningman_Click;
             runningman.MouseEnter += runningman_MouseEnter;
+            runningman.MouseLeave += runningman_MouseLeave;
             // 
             // Form1
             // 

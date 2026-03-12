@@ -7,9 +7,10 @@ namespace CatchButton
         {
             InitializeComponent();
         }
-
+        int score = 0;
         private void runningman_MouseEnter(object sender, EventArgs e)
         {
+
             SystemSounds.Hand.Play();
             // 1. 난수생성기준비
             Random rd = new Random();
@@ -23,13 +24,21 @@ namespace CatchButton
             // 4. 위치할당(새로운Point 객체생성)
             runningman.Location = new Point(nextX, nextY);
             // 5. 시각적피드백(폼제목표시줄에좌표출력)
-            this.Text = $"버튼위치: ({nextX}, {nextY})";
+            this.Text = $"버튼위치: ({nextX}, {nextY}), 점수:{score}";
         }
 
         private void runningman_Click(object sender, EventArgs e)
         {
+            score += 100;
             SystemSounds.Asterisk.Play();
             MessageBox.Show("축하합니다!", "성공", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            runningman.Width = (int)(runningman.Width * 0.9);
+            runningman.Height = (int)(runningman.Height * 0.9);
+        }
+
+        private void runningman_MouseLeave(object sender, EventArgs e)
+        {
+            score -= 10;
         }
     }
 }
