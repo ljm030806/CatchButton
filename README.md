@@ -16,7 +16,15 @@
 <img width="900" height="483" alt="스크린샷 2026-03-12 165027" src="https://github.com/user-attachments/assets/3a801f99-17c6-4d4b-8ed6-d1424ef5112e" />
 
 "사진3"는 클릭후 성공메세지가 뜨는것
+
 3단계코드의실행스크린샷(여기에이미지삽입)-
+
+<img width="800" height="484" alt="스크린샷 2026-03-12 170921" src="https://github.com/user-attachments/assets/d996555b-ec98-4788-b686-3af56a997008" />
+<img width="794" height="478" alt="스크린샷 2026-03-12 170938" src="https://github.com/user-attachments/assets/08a641f1-fdd7-4b8e-84bc-fe1d7da59523" />
+<img width="797" height="482" alt="스크린샷 2026-03-12 170951" src="https://github.com/user-attachments/assets/38dc4d2a-1948-4025-a0fe-bb4553fd85a0" />
+
+"사진4"는 버튼을 놓쳤을때 점수가 10점 감점된것 "사진5"는 버튼 클릭시 점수가 100점 추가된것 "사진6"은 클릭을 많이하여 버튼이 작아진것
 4단계코드의실행스크린샷(여기에이미지삽입)-
+
 
 ## 구현시어려웠던점
