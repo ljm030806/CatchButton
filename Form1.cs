@@ -1,4 +1,5 @@
 using System.Media;
+using static System.Net.Mime.MediaTypeNames;
 namespace CatchButton
 {
     public partial class Form1 : Form
@@ -8,6 +9,7 @@ namespace CatchButton
             InitializeComponent();
         }
         int score = 0;
+        int missCount = 0;
         private void runningman_MouseEnter(object sender, EventArgs e)
         {
 
@@ -39,6 +41,39 @@ namespace CatchButton
         private void runningman_MouseLeave(object sender, EventArgs e)
         {
             score -= 10;
+            missCount++;
+            if (missCount >= 20)
+            {
+                DialogResult result = MessageBox.Show(
+    "Game Over!\n다시 시작하시겠습니까?",
+    "게임 종료",
+    MessageBoxButtons.YesNo
+);
+                if (result == DialogResult.Yes)
+                {
+                    ResetGame();
+                }
+                else
+                {
+                    runningman.Enabled = false;
+                }
+
+
+                return;
+            }
+        }
+        void ResetGame()
+        {
+            score = 0;
+            missCount = 0;
+
+            runningman.Width = 355;
+            runningman.Height = 183;
+
+            runningman.Enabled = true;
+
+            this.Text = "점수: 0  놓친횟수: 0";
+
         }
     }
 }

@@ -35,7 +35,7 @@
             // 
             runningman.Font = new Font("맑은 고딕", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 129);
             runningman.ForeColor = Color.FromArgb(192, 0, 192);
-            runningman.Location = new Point(162, 94);
+            runningman.Location = new Point(193, 107);
             runningman.Name = "runningman";
             runningman.Size = new Size(355, 183);
             runningman.TabIndex = 0;
